@@ -10,5 +10,9 @@ Steps:
 
 3. We ran MDFF on the MELD predicted to produce structure which fits perfectly to map and has very low RMSD.
 
-4. Then 
+4. Then autodock was used to get initial docking pose of the ligand.
+
+5. Then MDFF was performed on the complex again to fit it to the density map.
+
+6. 
 ## Links
