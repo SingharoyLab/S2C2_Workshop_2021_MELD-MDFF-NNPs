@@ -4,5 +4,5 @@ Information regarding the installation and running of the Autodock suite can be 
 http://autodock.scripps.edu
 
 ## AutoDock Vina
-A configuation file (conf.txt) as well as the runs log file (loggy.log) is provided in this directory.
+A configuation file (conf.txt) as well as the the runs log (loggy.log) and results files are provided in this directory.
 
