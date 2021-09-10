@@ -1,0 +1,15 @@
+receptor = mdff_out.pdbqt
+ligand = ligand.pdbqt
+
+out = all.pdbqt
+
+center_x = 15.915
+center_y = -4.098
+center_z = 7.458
+
+size_y = 22
+size_x = 22
+size_z = 16
+
+exhaustiveness = 8
+

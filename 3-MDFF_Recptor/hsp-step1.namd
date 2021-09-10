@@ -1,0 +1,41 @@
+###  Docking -- Step 1
+ 
+set PSFFILE HIS_rename_autopsf.psf
+set PDBFILE HIS_rename_autopsf.pdb
+set GRIDPDB gridpdb-bb.pdb
+set GBISON 1
+set DIEL 1
+set SCALING_1_4 1.0
+set ITEMP 300
+set FTEMP 300
+set GRIDFILE 2xhx-pot-5.dx
+set GSCALE 0.3
+set EXTRAB 0
+set CONSPDB 0
+set FIXPDB  0
+set GRIDON 1
+ 
+set OUTPUTNAME hsp-step1
+ 
+set TS 5000000
+set MS 200
+ 
+set MARGIN 20
+ 
+####################################
+ 
+structure $PSFFILE
+coordinates $PDBFILE
+ 
+paraTypeCharmm on
+parameters par_all36_prot.prm
+
+if {[info exists INPUTNAME]} {
+  BinVelocities $INPUTNAME.restart.vel
+  BinCoordinates $INPUTNAME.restart.coor
+} else {
+  temperature $ITEMP
+}
+ 
+ 
+source mdff_template.namd

@@ -1,0 +1,3 @@
+#!/bin/bash
+module load namd/2.13b1-cuda
+namd2 +p7 mdff-2.namd

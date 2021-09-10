@@ -1,0 +1,42 @@
+###  Docking -- Step 1
+ 
+set PSFFILE complex.psf
+set PDBFILE complex.pdb
+set GRIDPDB gridpdb-noh.pdb
+set GBISON 1
+set DIEL 1
+set SCALING_1_4 1.0
+set ITEMP 300
+set FTEMP 300
+set GRIDFILE ../2xhx-pot-3.dx
+set GSCALE 0.3
+set EXTRAB {./complex-chirality.txt  ./complex-cispeptide.txt  ./complex-ssrestraints.txt}
+set CONSPDB 0
+set FIXPDB  0
+set GRIDON 1
+ 
+set OUTPUTNAME mdff-step-1
+ 
+set TS 5000000
+set MS 200
+ 
+set MARGIN 20
+ 
+####################################
+ 
+structure $PSFFILE
+coordinates $PDBFILE
+ 
+paraTypeCharmm on
+parameters ../par_all36_prot.prm
+parameters ../ligand.par
+
+if {[info exists INPUTNAME]} {
+  BinVelocities $INPUTNAME.restart.vel
+  BinCoordinates $INPUTNAME.restart.coor
+} else {
+  temperature $ITEMP
+}
+ 
+ 
+source ../mdff_template.namd
