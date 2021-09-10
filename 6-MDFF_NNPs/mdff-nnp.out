@@ -1,0 +1,232 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 32 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: v6.10.2-0-g7bf00fa-namd-charm-6.10.2-build-2020-Aug-05-556
+Warning> Randomization of virtual memory (ASLR) is turned on in the kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try running with '+isomalloc_sync'.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (2 sockets x 16 cores x 1 PUs = 32-way SMP)
+Charm++> cpu topology info is gathered in 0.008 seconds.
+Info: NAMD 2.14 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 61002 for multicore-linux-x86_64-iccstatic
+Info: Built Mon Aug 24 10:08:36 CDT 2020 by jim on belfast.ks.uiuc.edu
+Info: 1 NAMD  2.14  Linux-x86_64-multicore  32    gra932  crowley
+Info: Running on 32 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.0499793 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 2102.32 MB of memory in use based on /proc/self/stat
+Info: Configuration file is mdff-nnp.conf
+Info: Working in the current directory /project/6007501/crowley/mdff/mdff_2xhx_lig-receptor/ligand-model-0
+TCL: Suspending until startup complete.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        20
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: VELOCITY FILE          mdff-step-2.restart.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           mdff-nnp.dcd
+Info: DCD FREQUENCY          1000
+Info: DCD FIRST STEP         1000
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        mdff-nnp
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       mdff-nnp.restart
+Info: RESTART FREQUENCY      1000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           15
+Info: SWITCHING OFF          16
+Info: PAIRLIST DISTANCE      17
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 20
+Warning: MARGIN IS UNUSUALLY LARGE AND WILL LOWER PERFORMANCE
+Warning: MARGIN INCREASED PATCH VOLUME BY A FACTOR OF 8.31165
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        39.5
+Info: ENERGY OUTPUT STEPS    100
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    1000
+Info: PRESSURE OUTPUT STEPS  100
+Info: GRID FORCE ACTIVE
+Info:  Please include this reference in published work using
+Info:  the Gridforce module of NAMD: David Wells, Volha Abramkina,
+Info:  and Aleksei Aksimentiev, J. Chem. Phys. 127:125101-10 (2007).
+Info: MGRIDFORCE key 0
+Info:            Potfile ../2xhx-pot-3.dx
+Info:            Scale 0.5 0.5 0.5
+Info:            File gridpdb-noh.pdb
+Info:            Col O
+Info:            ChargeCol B
+Info:            VOffset 0 0 0
+Info:            Continuous K1 FALSE
+Info:            Continuous K2 FALSE
+Info:            Continuous K3 FALSE
+Info:            Volts FALSE
+Info:            Gridforce-Lite FALSE
+Info:            Gridforce-CheckSize TRUE
+Info: QM FORCES ACTIVE
+Info: QM PDB PARAMETER FILE: qmmm.pdb
+Info: QM SOFTWARE: custom
+Info: QM ATOM CHARGES FROM QM SOFTWARE: NONE
+Info: QM EXECUTABLE PATH: /home/crowley/projects/rrg-crowley-ac/crowley/mdff/mdff_2xhx_lig-receptor/client_ani2x.py
+Info: QM COLUMN: occ
+Info: QM BASE DIRECTORY: /dev/shm/
+Info: QM POINT CHARGES WILL BE SELECTED EVERY 1 STEPS.
+Info: QM executions per node: 1
+Info: GBIS GENERALIZED BORN IMPLICIT SOLVENT ACTIVE
+Info: GBIS SOLVENT DIELECTRIC: 80
+Info: GBIS PROTEIN DIELECTRIC: 1
+Info: GBIS COULOMB RADIUS OFFSET: 0.09 Ang
+Info: GBIS ION CONCENTRATION: 0.1 M
+Info: GBIS DEBYE SCREENING LENGTH: 9.74104 Ang
+Info: GBIS DELTA: 1
+Info: GBIS BETA: 0.8
+Info: GBIS GAMMA: 4.85
+Info: GBIS BORN RADIUS CUTOFF: 14 Ang
+Info: GBIS MAX BORN RADIUS: 30 Ang
+Info: SASA SURFACE TENSION: 0.005 kcal/mol/Ang^2
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 5 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      4
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : WATER
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: NONBONDED FORCES EVALUATED EVERY 2 STEPS
+Info: RANDOM NUMBER SEED     1631130408
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         complex.pdb
+Info: STRUCTURE FILE         complex.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ../par_all36_prot.prm
+Info: PARAMETERS             ../ligand.par
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     mdff-step-2.restart.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 143 BONDS
+Info: 380 ANGLES
+Info: 734 DIHEDRAL
+Info: 45 IMPROPER
+Info: 6 CROSSTERM
+Info: 61 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.1049
+Info: Reading pdb file complex.pdb
+Info: TIME FOR READING PDB FILE: 0.00953235
+Info: 
+Info: Using the following PDB file for QM parameters: qmmm.pdb
+Info: Number of QM atoms (excluding Dummy atoms): 43
+Info: 1) Group ID: 1 ; Group size: 43 atoms ; Total PSF charge: -0
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 3313 ATOMS
+Info: 3341 BONDS
+Info: 6042 ANGLES
+Info: 8820 DIHEDRALS
+Info: 578 IMPROPERS
+Info: 206 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 0 RIGID BONDS
+Info: 1 GRIDS ACTIVE
+Info: 9939 DEGREES OF FREEDOM
+Info: 1657 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 1657 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 23506.7 amu
+Info: TOTAL CHARGE = -8 e
+Info: *****************************
+Info: Reading from binary file mdff-step-2.restart.coor
+Info: 
+Info: Entering startup at 0.400966 s, 2209.72 MB of memory in use
+Info: Startup phase 0 took 0.0825626 s, 2209.72 MB of memory in use
+Info: The QM region will remove 45 bonds, 79 angles, 115 dihedrals, 25 impropers and 0 crossterms.
+Info: ADDED 18093 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.070999 s, 2209.89 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 833 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE ENERGY: 1.69407e-21 AT 15.998
+Info: RELATIVE IMPRECISION IN FAST TABLE ENERGY: 8.8807e-16 AT 15.9354
+Info: ABSOLUTE IMPRECISION IN FAST TABLE FORCE: 8.47033e-22 AT 15.998
+Info: RELATIVE IMPRECISION IN FAST TABLE FORCE: 2.88605e-15 AT 15.9354
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290362 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 2.46519e-32 AT 15.8094
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 4.58389e-15 AT 15.9354
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE FORCE: 2.88889e-33 AT 15.9354
+Info: RELATIVE IMPRECISION IN VDWA TABLE FORCE: 2.08346e-15 AT 15.9354
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0167626 AT 14.9979
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 1.03398e-25 AT 15.8725
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 3.28058e-14 AT 15.9354
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE FORCE: 4.20053e-26 AT 15.9354
+Info: RELATIVE IMPRECISION IN VDWB TABLE FORCE: 1.80765e-15 AT 15.9354
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.0678971 AT 14.9979
+Info: Startup phase 2 took 0.0705392 s, 2210.36 MB of memory in use
+Info: Startup phase 3 took 0.042139 s, 2210.36 MB of memory in use
+Info: Startup phase 4 took 0.027333 s, 2210.36 MB of memory in use
+Info: Startup phase 5 took 0.0303578 s, 2210.36 MB of memory in use
+Info: ORIGINAL ATOMS MINMAX IS -14.0211 -25.1999 -6.19894  35.4017 21.5424 36.0481
+Info: ADJUSTED ATOMS MINMAX IS -5.84488 -18.2753 -0.764655  29.0761 16.796 26.4875
+Info: PATCH GRID IS 3 BY 3 BY 2
+Info: PATCH GRID IS 2-AWAY BY 2-AWAY BY 1-AWAY
+Info: Reading from binary file mdff-step-2.restart.vel
+Info: REMOVING COM VELOCITY -0.0730017 0.129674 0.0362745
+Info: LARGEST PATCH (13) HAS 638 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0237575 s, 2210.91 MB of memory in use
+Info: Startup phase 7 took 0.000214509 s, 2210.91 MB of memory in use
+Info: Startup phase 8 took 0.000190535 s, 2210.91 MB of memory in use
+Info: Startup phase 9 took 0.000197699 s, 2210.91 MB of memory in use
+Info: Startup phase 10 took 0.000185285 s, 2210.91 MB of memory in use
+Info: Startup phase 11 took 0.0261029 s, 2210.91 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00535337 s, 2210.91 MB of memory in use
+Info: CREATING 423 COMPUTE OBJECTS
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.0206431 s, 2210.91 MB of memory in use
+Info: Startup phase 14 took 0.00906505 s, 2210.91 MB of memory in use
+Info: Startup phase 15 took 0.0129051 s, 2211.13 MB of memory in use
+Info: Finished startup at 0.823511 s, 2211.13 MB of memory in use
+
+TCL: Minimizing for 20 steps
+Info: List of ranks running QM simulations: 1.
+in client
+['/home/crowley/projects/rrg-crowley-ac/crowley/mdff/mdff_2xhx_lig-receptor/client_ani2x.py', '/dev/shm//0/qmmm_0.input']
+ERROR: Could not find QM output file!
+FATAL ERROR: (unknown error): No such file or directory
+[Partition 0][Node 0] End of program
