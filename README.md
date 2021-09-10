@@ -14,5 +14,5 @@ Steps:
 
 5. Then MDFF was performed on the complex again to fit it to the density map.
 
-6. 
-## Links
+6. As a final step, an MDFF-NNP simulation was conducted.  Here protein-ligand and ligand-ligand potential energies where modeled with Nueral Network Potentials (NNP) and the protein-protein potential energies were modeled with classical Charmm potentials.
+
